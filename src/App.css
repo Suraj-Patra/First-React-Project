@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* -------------------------- Navbar --------------------- */
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+  box-shadow: 0 0 10px 0 #ccc;
+}
+
+
+.navbar .logo--section{
+  display: flex;
+  align-items: center;
+}
+.navbar .logo--section .nav--logo{
+  width: 30px;
+  margin-right: 0.5em;
+}
+.navbar .logo--section .nav--logo_text{
+  color: #00ABCA;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+
+.toggler{
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.toggler--light{
+  color: #000;
+  font-weight: bold;
+}
+.toggler--dark{
+  color: #777;
+  font-weight: bold;
+}
+.toggler--slider{
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 2.3rem;
+  padding: 0.2em 0.1em 0.25em 0.1em;
+  margin: 0 0.5em;
+  display: flex;
+  justify-content: flex-start;
+}
+.toggler--slider--circle{
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+}
+
+
+
+/* ********* For dark-mode ******** */
+.navbar.dark--mode{
+  background: #21222A;
+}
+
+
+.navbar.dark--mode .toggler--light{
+  color: #aaa;
+}
+.navbar.dark--mode .toggler--dark{
+  color: #fff;
+}
+.navbar.dark--mode .toggler--slider{
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid #fff;
+}
+.navbar.dark--mode  .toggler--slider--circle{
+
+  background: #fff;
+}
+
+/* -------------------------- Navbar --------------------- */
+
+
+
+
+
+/* -------------------------- Main --------------------- */
+
+.main--section{
+  height: 100vh;
+  margin: 0 auto;  
+  padding: 3em 2em;
+
+  color: #2B283A;
+  background-image: url('/home/suraj/Documents/React/Scrimba/Projects/toggle-dark-mode/src/images/React-half-icon.svg.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  background-size: 30%;
+}
+
+
+.main--section .main--heading{
+  margin: 0.5em 0;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+
+.main--section .fun--list{
+  width: 90%;
+  margin: 0 2em;
+  font-size: 1.5rem;
+  line-height: 2em;
+}
+.main--section .fun--list > li::marker{
+  font-size: 1.4rem;
+  color: #00ABCA;
+}
+
+
+
+/* ********* For dark-mode ******** */
+.main--section.dark--mode {
+  background-color: #21222A;
+  color: #fff;
+}
+
+
+/* -------------------------- Main --------------------- */
